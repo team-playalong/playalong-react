@@ -1,9 +1,16 @@
 import React from 'react';
-// import TextInput from './TextInput.js';
+import TextInput from './TextInput';
 
 const ChordSearchPage = () => {
   return (
-    <h2>Chord Search</h2>
+    <div>
+      <h2>Chord Search</h2>
+      <TextInput
+        label="Artist"
+        name="artist"
+      />
+    </div>
+
   );
 };
 
