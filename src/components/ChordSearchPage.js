@@ -1,10 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router';
+// import TextInput from './TextInput.js';
 
-const HomePage = () => {
+const ChordSearchPage = () => {
   return (
-    <div>Hello from Chord</div>
+    <h2>Chord Search</h2>
   );
 };
 
-export default HomePage;
+
+export default ChordSearchPage;
