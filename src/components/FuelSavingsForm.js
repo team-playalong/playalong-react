@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import FuelSavingsResults from './FuelSavingsResults';
 import FuelSavingsTextInput from './FuelSavingsTextInput';
 
@@ -24,7 +24,7 @@ class FuelSavingsForm extends React.Component {
   }
 
   render() {
-    const {fuelSavings} = this.props;
+    const { fuelSavings } = this.props;
 
     return (
       <div>
@@ -78,8 +78,9 @@ class FuelSavingsForm extends React.Component {
 
         <hr/>
 
-        {fuelSavings.necessaryDataIsProvidedToCalculateSavings && <FuelSavingsResults savings={fuelSavings.savings}/>}
-        <input type="submit" value="Save" onClick={this.save}/>
+        {fuelSavings.necessaryDataIsProvidedToCalculateSavings &&
+          <FuelSavingsResults savings={fuelSavings.savings} />}
+        <input type="submit" value="Save" onClick={this.save} />
       </div>
     );
   }

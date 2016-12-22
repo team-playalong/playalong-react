@@ -1,13 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import ChordSearchPage from './ChordSearchPage';
+// import sinon from 'sinon';
+import ChordSearchForm from './ChordSearchForm';
 
-describe('<ChordSearchPage />', () => {
+describe('<ChordSearchForm />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<ChordSearchPage />);
+    wrapper = shallow(<ChordSearchForm />);
   });
 
   it('should have a header called \'Chord Search\'', () => {
