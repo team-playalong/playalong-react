@@ -2,8 +2,9 @@
     "extends": "airbnb",
     "rules": {
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      "arrow-body-style": ["error", "always"],
-      "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.js", "**/*.spec.js"]}]
+      "arrow-body-style": "off",
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.js", "**/*.spec.js"]}],
+      "padded-blocks": "off"
     },
     "plugins": [
         "react",
@@ -12,6 +13,7 @@
         "jasmine"
     ],
     "env": {
-      "jasmine": true
+      "jasmine": true,
+      "browser": true
     }
 }
