@@ -1,17 +1,29 @@
 import React, { PropTypes } from 'react';
 
-const RadioButtons = (props) => {
-  const allRadioButtons = props.inputs.forEach(input => {
-    return <input type="radio" />
+const RadioButtons = props => {
+  let currId;
+
+  const allRadioButtons = props.inputs.map(input => {
+    currId = input.value + Date.now();
+    return (
+      <label key={currId} htmlFor={currId}>
+        {input.label}
+        <input id={currId} type="radio" value={input.value} />
+      </label>
+    );
   });
 
   return (
-      allRadioButtons
+    <fieldset>
+      (!!props.legend && <legend>{props.legend}</legend>)
+      {allRadioButtons}
+    </fieldset>
   );
 };
 
 RadioButtons.propTypes = {
-  inputs: PropTypes.array,
+  inputs: PropTypes.arrayOf(PropTypes.object).isRequired,
+  legend: PropTypes.string,
 };
 
 export default RadioButtons;

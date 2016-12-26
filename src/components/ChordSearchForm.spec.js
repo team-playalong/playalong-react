@@ -20,7 +20,7 @@ describe('<ChordSearchForm />', () => {
 
   it('Should have a text input with an artist name', () => {
     const TextInput = wrapper.find('TextInput');
-    const expectedName = 'artist';
+    const expectedName = 'searchInput';
     const actualName = TextInput.first().props().name;
     expect(actualName).to.equal(expectedName);
   });
