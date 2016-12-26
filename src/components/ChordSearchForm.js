@@ -16,10 +16,23 @@ class ChordSearchForm extends React.Component {
   }
 
   render() {
+    const radioInputs = [
+      {
+        label: 'Artist',
+        value: 'artist',
+      },
+      {
+        label: 'Title',
+        value: 'title',
+      },
+    ];
+
     return (
       <div>
         <h2>Chord Search</h2>
-        <RadioButtons />
+        <RadioButtons
+          inputs={radioInputs}
+        />
         <TextInput
           name="searchInput"
         />

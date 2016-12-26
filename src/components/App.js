@@ -13,7 +13,7 @@ class App extends React.Component {
         <Link to="/fuel-savings">Demo App</Link>
         {' | '}
         <Link to="/about">About</Link>
-        <br/>
+        <br />
         {this.props.children}
       </div>
     );
@@ -21,7 +21,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.element,
 };
 
 export default App;

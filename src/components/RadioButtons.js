@@ -15,7 +15,7 @@ const RadioButtons = props => {
 
   return (
     <fieldset>
-      (!!props.legend && <legend>{props.legend}</legend>)
+      {!!props.legend && <legend>{props.legend}</legend>}
       {allRadioButtons}
     </fieldset>
   );
